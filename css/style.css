@@ -1,0 +1,308 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;  
+    /* font-family:'Courier New', Courier, monospace */
+}
+body{
+    padding-top: 62px;
+    height: 2000px;
+    position: relative;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/* start header  */
+header{
+    background-color: #d8d5d5;
+    padding: 15px 0px;
+    width: 100%;
+    position:fixed;
+    z-index: 9999;
+    top: 0px;
+    left: 0;
+}
+.header a{
+    text-decoration: none;
+    padding: 0 10px;
+}
+
+/* end header  */
+/* start search  */
+.container-search{
+    width: 85%;
+    margin: auto;
+    padding: 20px 0px;
+}
+.container-search select{
+    width: 49%;
+    padding: 6px;
+    border: 2px solid #eee;
+    font-weight: bold;
+    color: #666;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+.container-search input[type="text"]{
+    width: 49%;
+    padding: 6px;
+    border: 2px solid #eee;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+.container-search input[type="text"]::placeholder{
+    padding: 6px;
+    font-weight: bold;
+    color: #666;
+}
+/* end search  */
+/* start product  */
+
+.wrapper .item {
+    /* background-color: rgba(255,255,255,.2); */
+   /* backdrop-filter: blur(30px); */
+}
+.wrapper .item img{
+ width: 90%;
+ height: 300px;
+ display: block;
+ margin: auto;
+}
+.item-info{
+    padding: 15px 30px;
+    font-weight: bold;
+    line-height: 30px;
+}
+.item-foot{
+    margin: 0px 30px 20px 30px;
+}
+.add-to-cart{
+    font-size: 12px;
+    cursor: pointer;
+    padding: 10px 16px;
+}
+.add-to-cart + i{
+    color: #999;
+    font-size: 20px;
+    cursor: pointer;
+}
+/* end product  */
+/* start register  */
+form {
+    width: 100%;
+    margin: 30px 0;
+    background-color: #f7f7f7;
+    padding: 0 10px;
+}
+form label{
+    font-weight: bold;
+    font-size: 14px;
+}
+form div{
+    width: 100%;
+}
+form div input{
+    width: 99%;
+    padding: 10px;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    margin: 7px 0;
+}
+form input:focus{
+    border: none;
+    outline: none;
+    box-shadow: 0 0 6px var(--blue-color);
+}
+.submit{
+    font-size: 12px;
+    padding: 8px 16px;
+}
+/* end register  */
+/* start login */
+.email{
+    margin-bottom: 0;
+}
+.span-email, .span-email + a{
+    font-size: 12px;
+    font-weight: bold;
+}
+.span-email + a{
+    color: var(--blue-color);
+    text-decoration: none;
+}
+.sub-p{
+    margin-bottom: 10px;
+}
+.sub-p span{
+    font-size: 12px;
+}
+.submit{
+    cursor: pointer;
+}
+/* end login */
+/* start main  */
+#shopping-cart{
+    padding-right: 10px;
+    position: relative;
+}
+.counter{
+    top: 3px;
+    left: 19px;
+    position: absolute;
+    display: block;
+    width: 15px ;
+    height: 15px ;
+    /* background-color: red; */
+    /* border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%; */
+    text-align: center;
+    line-height: 15px;
+    color: var(--blue-color);
+    font-size: 10px;
+    display: none;
+    font-weight: bold;
+}
+#cart{
+    cursor: pointer;
+}
+.parent-cart{
+    width: 270px;
+
+    padding: 10px;
+    position: absolute;
+    top: 30px;
+    left: -210px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    display: none;
+}
+.parent-cart div div{
+    background-color: white;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+.parent-cart div div input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 30px;
+    margin:  0 10px;
+}
+.view{
+    text-align: center;
+    text-decoration: none;
+    margin: 25px 0 -5px 0;
+}
+a,i{
+    cursor: pointer;
+}
+/* end main  */
+/* start all products  */
+.ordered-products{
+    display: grid;
+    grid-template-columns:repeat(auto-fill, minmax(450px, 1fr)); 
+    gap: 20px;
+}
+.ordered-products > div{
+    background-color: #eee;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    overflow: hidden;
+    height: 200px;
+}
+.ordered-products > div img{
+    width: 50%;
+    height: 200px;
+}
+.ordered-products > div >div{
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    
+}
+/* start favourite  */
+
+.fav{
+    width: 90%;
+    margin: auto;
+}
+/* .favContent{
+    display: flex;
+    justify-content: space-between;
+} */
+.shortLine{
+    width: 50px;
+    height: 3px;
+    background-color: red;
+    display: block;
+    margin: auto;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+.shortLine:hover{
+    width: 100px;
+}
+
+/* .favItem{
+    width: 30%;
+    margin-top: 40px;
+    user-select: none;
+    overflow: hidden;
+    font-weight: bold;
+    background-color: #eee;
+    padding: 15px 20px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    text-align: center;
+}
+.favItem:hover{
+    border: 1px solid rgb(172, 13, 13);
+}
+.favItem img{
+    width: 60%;
+    height: 150px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    margin-bottom: 10px;
+}
+.favItem p{
+    text-align: left;
+    padding:  5px 20px;
+} */
+/* end favourite  */
+/* end all products */

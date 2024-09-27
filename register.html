@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/frame.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Register</title>
+</head>
+<body>
+    <header class=>
+        <div class="container ">
+            <div class="flex-between">
+                <h2 class="c-blue ">Online Shopping</h2>
+                
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container3">
+            <form action="login.html" id="register-form">
+                <div class="flex-between">
+                    <div>
+                        <label for="firstName" >First name</label> <br>
+                        <input type="text" required class="fName" id="firstName" name="firstName">
+                    </div>
+                    <div>
+                        <label for="secondName">Second name</label> <br>
+                        <input type="text" required id="secondName" name="secondName">
+                    </div>
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div>
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" required>
+                </div>
+                <button class="btn-shape submit" id="register-btn" onclick="{saveData()}">Submit</button>
+            </form>
+        </div>
+    </main>
+  
+
+    <script src="js/script.js"></script>
+    <script src="js/draw.js"></script>
+</body>
+</html>

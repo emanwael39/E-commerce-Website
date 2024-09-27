@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/frame.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Login</title>
+</head>
+<body>
+    <header class=>
+        <div class="container ">
+            <div class="flex-between">
+                <h2 class="c-blue ">Online Shopping</h2>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container3">
+            <form action="" id="login-form" >
+                <div>
+                    <label for="loginEmail">Email address</label>
+                    <input type="email" name="loginEmail" id="loginEmail" required class="email"><br>
+                    <span class="c-gray span-email" >Do you have an account?</span>
+                    <a href="register.html">Register</a>
+                </div>
+                <div class="mt-10">
+                    <label for="loginPassword">Password</label>
+                    <input type="password" name="loginPassword" id="loginPassword" required>
+                </div>
+                <p class="sub-p">
+                <input type="checkbox">
+                <span class="fw-bold">Remember me</span>
+                </p>
+                <button class="btn-shape submit" id="login-btn" onclick="{saveLoginData()}">Submit</button>
+            </form>
+        </div>
+    </main>
+  
+
+    <script src="js/script.js"></script>
+    <script src="js/draw.js"></script>
+</body>
+</html>

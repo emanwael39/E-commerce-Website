@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/frame.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Jewelry</title>
+</head>
+<body>
+    <header>
+        <div class="container ">
+            <div class="flex-between">
+                <h2 class="c-blue ">Online Shopping</h2>
+                <div class="header">
+                    <a href="login.html" class="c-blue fw-bold fs-18">Login</a>
+                    <a href="register.html" class="c-blue fw-bold fs-18">Register</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="search">
+            <div class="container-search flex-between">
+                <select name="cars" id="cars" onchange="{searchMode(this.value)}">
+                    <option value="name" class="search-name">search by name</option>
+                    <option value="category" class="search-category">search by category</option>
+                  </select>
+                  <input type="text" placeholder="search" onkeyup="{search(this.value)}">
+            </div>
+        </div>
+        <span class="line"></span>
+        <div class="container3">
+            <div class="wrapper wrap">
+                <!-- <div class="item">
+                    <img src="Images/SRing1.jpg" alt="">
+                    <div class="item-info">
+                        <div>
+                            <span>Product: </span>
+                            <span class="product-name">Silver Ring</span>
+                        </div>
+                        <p>Price: 100$</p>
+                        <div>
+                            <span>Category: </span>
+                            <span class="product-category">Ring</span>
+                        </div>
+                    </div>
+                    <div class="flex-between item-foot">
+                        <button class="add-to-cart btn-shape" onclick="{add(this)}">Add to cart</button>
+                        <i class="fa-solid fa-heart love" onclick="{change(this)}"></i>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </main>
+
+    <script src="js/script.js"></script>
+    <script src="js/script2.js"></script>
+    <script src="js/draw.js"></script>
+</body>
+</html>

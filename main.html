@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/frame.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Jewelry</title>
+</head>
+<body>
+    <header class="bg-eee">
+        <div class="container ">
+            <div class="flex-between">
+                <h2 class="c-blue ">Online Shopping</h2>
+                <h2 class="user-name c-blue" id="username-display">
+                </h2>
+                <div class="header d-flex">
+                    <div class="mx-10 d-flex" >
+                        <div>
+                            <i class="fa-solid fa-cart-shopping fa-lg" style="color: var(--blue-color);" id="shopping-cart" onclick="{show()}">
+                                <span class="counter">
+                                </span>
+                            </i>
+                    
+                            
+                        </div>
+                        <div class="cart-items p-relative">
+                            
+                            <label for="" class="c-blue fw-bold cart" id="cart" onclick="{show()}">Cart</label>
+                            <div>
+                                <div class="parent-cart bg-eee" id="parent-cart">
+                                    <div id="addCart">
+                                        <!-- <div class="flex-between ">
+                                            <p class="c-blue">Silver Ring</p>
+                                            <span>
+                                                <span  class="c-blue fw-bold " id="productCounter">1</span>
+                                                <i class="fa-solid fa-plus c-green  px-10" onclick="{increase()}"></i>
+                                                <i class="fa-solid fa-minus " style="color:red" onclick="{decrease()}"></i>
+                                            </span>
+                                        </div>
+                                        <div class="flex-between ">
+                                            <p class="c-blue">Silver Ring</p>
+                                            <span>
+                                                <span  class="c-blue fw-bold " id="productCounter">1</span>
+                                                <i class="fa-solid fa-plus c-green  px-10" onclick="{increase()}"></i>
+                                                <i class="fa-solid fa-minus " style="color:red" onclick="{decrease()}"></i>
+                                            </span>
+                                        </div> -->
+                                        <!-- <div class="flex-between">
+                                            <p class="c-blue">Silver Ring</p>
+                                            <input type="number" value="1"  min="1" id="" class="c-blue fw-bold">
+                                        </div> -->
+                                    </div>
+                                    <a href="allProduct.html" class="view c-blue fw-bold d-block" onclick="{view()}">View all product</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <a onclick="{logout()}" class="c-blue fw-bold fs-18">Logout</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="search">
+            <div class="container-search flex-between">
+                <select name="cars" id="cars" onchange="{searchMode(this.value)}">
+                    <option value="name" class="search-name">search by name</option>
+                    <option value="category" class="search-category">search by category</option>
+                  </select>
+                  <input type="text" placeholder="search" onkeyup="{search(this.value)}">
+            </div>
+        </div>
+        <span class="line"></span>
+        <div class="container3">
+            <div class="wrapper">
+                <!-- <div class="item">
+                    <img src="Images/SRing1.jpg" alt="">
+                    <div class="item-info">
+                        <div>
+                            <span>Product: </span>
+                            <span class="product-name">Silver Ring</span>
+                        </div>
+                        <p>Price: 100$</p>
+                        <div>
+                            <span>Category: </span>
+                            <span class="product-category">Ring</span>
+                        </div>
+                    </div>
+                    <div class="flex-between item-foot">
+                        <button class="add-to-cart btn-shape" onclick="{add(this)}">Add to cart</button>
+                        <i class="fa-solid fa-heart love" onclick="{change(this)}"></i>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </main>
+    <!-- <script src="js/draw.js"></script> -->
+    <script src="js/script.js"></script>
+    <script src="js/script2.js"></script>
+    <script src="js/ordered.js"></script>
+
+</body>
+</html>

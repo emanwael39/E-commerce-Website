@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/frame.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <!-- using swopper cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+    <title>Jewelry</title>
+</head>
+<body>
+    <header class="bg-eee">
+        <div class="container ">
+            <div class="flex-between">
+                <h2 class="c-blue " ><a href="main.html" style="color:var(--blue-color)">Online Shopping</a></h2>
+                
+                <div class="header d-flex">
+                   
+                    <a onclick="{logout()}" class="c-blue fw-bold fs-18">Logout</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="container3 my-20">
+        <div class="ordered-products">
+        </div>
+        <p class="txt-c fw-bold total my-20 fs-18" ></p>
+        <span class="line"></span>
+        <div class="fav my-20">
+            <h2 class="txt-c mt-20">Favourite</h2>
+            <span class="shortLine"></span>
+            <!-- <div class="favContainer ">
+              <div class="favContent ">
+                    <div class="favItem ">
+                        <img src="Images/necklace1.jpg" alt="">
+                        <p>Product: Silver Ring</p>
+                        <div class="flex-between">
+                            <p>Category: Ring</p>
+                            <i class="fa-solid fa-heart love" onclick="{change(this)}" style="color: red; font-size: 25px;"></i>
+                        </div>
+                    </div>
+                    <div class="favItem ">
+                        <img src="Images/necklace1.jpg" alt="">
+                        <p>Product: Silver Ring</p>
+                        <div class="flex-between">
+                            <p>Category: Ring</p>
+                            <i class="fa-solid fa-heart love" onclick="{change(this)}" style="color: red; font-size: 25px;"></i>
+                        </div>
+                    </div>
+                    <div class="favItem ">
+                        <img src="Images/necklace1.jpg" alt="">
+                        <p>Product: Silver Ring</p>
+                        <div class="flex-between">
+                            <p>Category: Ring</p>
+                            <i class="fa-solid fa-heart love" onclick="{change(this)}" style="color: red; font-size: 25px;"></i>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <div class="wrapper2 my-20">
+                <i id="left" class="fa-solid  fas fa-angle-left" style="z-index: 10;"></i>
+                <ul class="carousel">
+                    <!-- <li class="card">
+                        <div class="img"><img src="Images/Bracelet1.jpeg" alt="" draggable="false"> </div>
+                        <div class="fav-info">
+                            <p>Product: Silver Ring</p>
+                        <div class="flex-between ">
+                            <p>Category: Ring</p>
+                            <i class="fa-solid fa-heart love" onclick="{change(this)}"
+                                style="color: red; font-size: 18px;"></i>
+                        </div>
+                        </div>
+                    </li>
+                    <li class="card">
+                        <div class="img"><img src="Images/Bracelet2.jpeg" alt="" draggable="false"> </div>
+                        <div class="fav-info">
+                            <p>Product: Silver Ring</p>
+                        <div class="flex-between ">
+                            <p>Category: Ring</p>
+                            <i class="fa-solid fa-heart love" onclick="{change(this)}"
+                                style="color: red; font-size: 18px;"></i>
+                        </div>
+                        </div>
+                    </li>
+                    <li class="card">
+                        <div class="img"><img src="Images/Bracelet3.jpeg" alt="" draggable="false"> </div>
+                        <div class="fav-info">
+                            <p>Product: Silver Ring</p>
+                        <div class="flex-between ">
+                            <p>Category: Ring</p>
+                            <i class="fa-solid fa-heart love" onclick="{change(this)}"
+                                style="color: red; font-size: 18px;"></i>
+                        </div>
+                        </div>
+                    </li>
+                    <li class="card">
+                        <div class="img"><img src="Images/Bracelet5.jpeg" alt="" draggable="false"> </div>
+                        <div class="fav-info">
+                            <p>Product: Silver Ring</p>
+                        <div class="flex-between ">
+                            <p>Category: Ring</p>
+                            <i class="fa-solid fa-heart love" onclick="{change(this)}"
+                                style="color: red; font-size: 18px;"></i>
+                        </div>
+                        </div>
+                    </li>
+                    <li class="card">
+                        <div class="img"><img src="Images/Bracelet1.jpeg" alt="" draggable="false"> </div>
+                        <div class="fav-info">
+                            <p>Product: Silver Ring</p>
+                        <div class="flex-between ">
+                            <p>Category: Ring</p>
+                            <i class="fa-solid fa-heart love" onclick="{change(this)}"
+                                style="color: red; font-size: 18px;"></i>
+                        </div>
+                        </div>
+                    </li> -->
+                </ul>
+                <i id="right" class="fa-solid fas fa-angle-right"></i>
+            </div>
+    
+        </div>
+    </main>
+  
+    <script src="js/script.js"></script>
+    <script src="js/script2.js"></script>
+    <script src="js/allProduct.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/fav.js"></script>
+    <!-- swipper js  -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</body>
+</html>
